@@ -12,7 +12,6 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-
         SafeBank safeBank = new SafeBank();
 
         System.out.println("================================");

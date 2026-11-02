@@ -13,10 +13,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class SafeBankTest {
 
-    SafeBank safeBank;
+     SafeBank safeBank;
+
 
     @BeforeEach
     public void setUp() {
+
         safeBank = new SafeBank();
         safeBank.setName("Taofeek");
         safeBank.setBalance(0.0);
@@ -254,7 +256,6 @@ public class SafeBankTest {
     @Test
     public void pinMustNotBeMoreThanFourDigitsTest() {
         String pin = "12345";
-
         assertFalse(pin.matches("[0-9]{4}"));
     }
 
